@@ -3,9 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Naam Japa Counter — A peaceful, offline-first digital japa counter for Radha Naam & Mantra practice. Designed for modern seekers.">
+    <title>Naam Japa Counter — Your Sacred Space for Daily Sadhana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="site-header" id="site-header">
+        <nav class="nav-container" aria-label="Main navigation">
+            <a href="#" class="nav-logo" aria-label="Naam Japa Counter">
+                <span class="logo-om">ॐ</span>
+                <span>Naam Japa</span>
+            </a>
+
+            <ul class="nav-links" role="list">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">App Preview</a></li>
+                <li><a href="#consistency">Progress</a></li>
+                <li><a href="#stories">Stories</a></li>
+            </ul>
+
+            <a href="#download" class="btn btn-primary nav-cta">Get App</a>
+
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#features" class="mobile-link">Features</a></li>
+                <li><a href="#screenshots" class="mobile-link">App Preview</a></li>
+                <li><a href="#consistency" class="mobile-link">Progress</a></li>
+                <li><a href="#stories" class="mobile-link">Stories</a></li>
+                <li><a href="#download" class="btn btn-primary mobile-link">Get App</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="hero" aria-labelledby="hero-heading">
+            <div class="hero-left fade-up">
+                <span class="badge">🕉️ Spiritual App of the Year</span>
+                <h1 id="hero-heading">
+                    Your Sacred Space for<br>
+                    <span class="highlight">Daily Sadhana</span>
+                </h1>
+                <p class="hero-desc">
+                    A peaceful, offline-first digital japa counter for Radha Naam &amp; Mantra practice.
+                    Built with love for modern seekers.
+                </p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary" id="hero-download">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.42.07 2.4.77 3.22.83.98-.18 1.92-.91 3.21-.98 1.56-.1 2.96.65 3.85 1.8-3.4 2.04-2.83 6.6.85 7.85-.62 1.56-1.44 3.1-3.13 4.38zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                        Download on Play Store
+                    </a>
+                    <a href="#features" class="btn btn-outline">Explore Features</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>50K+</strong>
+                        <span>Active Users</span>
+                    </div>
+                    <div class="stat-sep" aria-hidden="true"></div>
+                    <div class="stat">
+                        <strong>4.9 ★</strong>
+                        <span>Play Store</span>
+                    </div>
+                    <div class="stat-sep" aria-hidden="true"></div>
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Offline</span>
+                    </div>
+                </div>
+            </div>
+
+            <figure class="hero-right fade-up delay-1" aria-label="App home screen">
+                <div class="phone-wrap">
+                    <img src="assets/image-1.jpg" alt="Naam Japa Counter home screen showing Hare Krishna counter with mala ring" class="phone-img" width="280">
+                    <div class="phone-badge">
+                        <span>🔥</span> 7 Day Streak
+                    </div>
+                </div>
+            </figure>
+        </section>
+
+        <!-- ========== FEATURES ========== -->
+        <section class="features" id="features" aria-labelledby="features-heading">
+            <div class="container">
+                <header class="section-header fade-up">
+                    <span class="label-tag">Features</span>
+                    <h2 id="features-heading">Mindfully Crafted for Seekers</h2>
+                    <p>Modern tools for your ancient practice — designed to help you stay focused on what truly matters.</p>
+                </header>
+
+                <div class="features-grid">
+
+                    <article class="feat-card fade-up">
+                        <figure class="feat-img-wrap" aria-label="Focus Mode screen">
+                            <img src="assets/image-8.jpg" alt="Focus mode showing Hare Krishna chanting screen with mala ring" loading="lazy">
+                        </figure>
+                        <div class="feat-info">
+                            <span class="feat-icon" aria-hidden="true">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </span>
+                            <h3>Focus Mode</h3>
+                            <p>Distraction-free, full-screen chanting. Just you and your Naam.</p>
+                        </div>
+                    </article>
+
+                    <article class="feat-card feat-card--tall fade-up delay-1">
+                        <figure class="feat-img-wrap" aria-label="Report and progress screen">
+                            <img src="assets/image-4.jpg" alt="Report screen showing current streak, weekly progress and lifetime japa stats" loading="lazy">
+                        </figure>
+                        <div class="feat-info">
+                            <span class="feat-icon" aria-hidden="true">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            </span>
+                            <h3>Smart Tracking</h3>
+                            <p>Streak counter, weekly progress dots, lifetime japa totals — all in one place.</p>
+                        </div>
+                    </article>
+
+                    <article class="feat-card fade-up delay-2">
+                        <figure class="feat-img-wrap" aria-label="Settings screen">
+                            <img src="assets/image-7.jpg" alt="Settings screen with language, dark mode, vibration and daily goal options" loading="lazy">
+                        </figure>
+                        <div class="feat-info">
+                            <span class="feat-icon" aria-hidden="true">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                            </span>
+                            <h3>Fully Customisable</h3>
+                            <p>Language, daily goals, reminders, vibration — set it exactly your way.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== APP SCREENSHOTS ========== -->
+        <section class="screenshots" id="screenshots" aria-labelledby="screenshots-heading">
+            <div class="container">
+                <header class="section-header fade-up">
+                    <span class="label-tag">App Preview</span>
+                    <h2 id="screenshots-heading">Every Screen, Designed with Devotion</h2>
+                    <p>A complete spiritual companion — from chanting to tracking, history to reminders.</p>
+                </header>
+
+                <div class="screenshots-scroll" role="list" aria-label="App screenshots">
+                    <figure class="ss-item fade-up" role="listitem">
+                        <img src="assets/image-1.jpg" alt="Home screen — Hare Krishna counter" loading="lazy">
+                        <figcaption>Home Counter</figcaption>
+                    </figure>
+                    <figure class="ss-item fade-up delay-1" role="listitem">
+                        <img src="assets/image-8.jpg" alt="Focus mode screen" loading="lazy">
+                        <figcaption>Focus Mode</figcaption>
+                    </figure>
+                    <figure class="ss-item fade-up delay-2" role="listitem">
+                        <img src="assets/image-4.jpg" alt="Report & progress screen" loading="lazy">
+                        <figcaption>Reports</figcaption>
+                    </figure>
+                    <figure class="ss-item fade-up delay-3" role="listitem">
+                        <img src="assets/image-5.jpg" alt="History screen with japa log" loading="lazy">
+                        <figcaption>History</figcaption>
+                    </figure>
+                    <figure class="ss-item fade-up delay-4" role="listitem">
+                        <img src="assets/image-6.jpg" alt="Hindu Stories screen" loading="lazy">
+                        <figcaption>Stories</figcaption>
+                    </figure>
+                    <figure class="ss-item fade-up" role="listitem">
+                        <img src="assets/image-7.jpg" alt="Settings screen" loading="lazy">
+                        <figcaption>Settings</figcaption>
+                    </figure>
+                    <figure class="ss-item fade-up delay-1" role="listitem">
+                        <img src="assets/image-9.jpg" alt="Reminders screen" loading="lazy">
+                        <figcaption>Reminders</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONSISTENCY / PROGRESS ========== -->
+        <section class="consistency" id="consistency" aria-labelledby="consistency-heading">
+            <div class="container consistency-layout">
+
+                <div class="consistency-content fade-up">
+                    <span class="label-tag">Track Progress</span>
+                    <h2 id="consistency-heading">Build a Habit of <span class="highlight">Consistency</span></h2>
+                    <p>
+                        The path of Sadhana is built on small, daily steps. Our advanced tracking tools don't just count numbers —
+                        they celebrate your dedication. Watch your devotion grow, day by day.
+                    </p>
+                    <ul class="check-list" role="list">
+                        <li>
+                            <span class="check-dot" aria-hidden="true">✓</span>
+                            Weekly &amp; monthly heatmap view
+                        </li>
+                        <li>
+                            <span class="check-dot" aria-hidden="true">✓</span>
+                            Streak tracking with habit nudges
+                        </li>
+                        <li>
+                            <span class="check-dot" aria-hidden="true">✓</span>
+                            Lifetime japa counter across all mantras
+                        </li>
+                        <li>
+                            <span class="check-dot" aria-hidden="true">✓</span>
+                            Exportable session sheets for teachers
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="consistency-screens fade-up delay-1">
+                    <figure class="cs-phone cs-phone--back" aria-label="Insights chart screen">
+                        <img src="assets/image-2.jpg" alt="Insights bar chart showing weekly japa count" loading="lazy">
+                    </figure>
+                    <figure class="cs-phone cs-phone--front" aria-label="Consistency heatmap screen">
+                        <img src="assets/image-3.jpg" alt="Consistency heatmap showing 260 total japa this month" loading="lazy">
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== STORIES ========== -->
+        <section class="stories-section" id="stories" aria-labelledby="stories-heading">
+            <div class="container">
+                <div class="stories-layout">
+                    <figure class="stories-phone fade-up" aria-label="Stories screen">
+                        <img src="assets/image-6.jpg" alt="Hindu Stories screen showing Ganga ka Avataran and other spiritual stories" loading="lazy">
+                    </figure>
+                    <div class="stories-content fade-up delay-1">
+                        <span class="label-tag">Hindu Stories</span>
+                        <h2 id="stories-heading">Deepen Your <span class="highlight">Spiritual Knowledge</span></h2>
+                        <p>Beyond counting — learn the sacred stories behind the mantras you chant. Curated Hindu stories in Hindi and English, beautifully presented for daily reading.</p>
+                        <div class="story-cards">
+                            <div class="story-pill">गंगा का अवतरण</div>
+                            <div class="story-pill">भगवान कृष्ण और सुदामा</div>
+                            <div class="story-pill">गणेश की बुद्धिमानी</div>
+                            <div class="story-pill">+ More stories →</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== DOWNLOAD CTA ========== -->
+        <section class="cta-section" id="download" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta-card fade-up">
+                    <div class="cta-text">
+                        <h2 id="cta-heading">Start Your Journey Today</h2>
+                        <p>Download Naam Japa Counter and transform your phone into a sacred tool for daily practice.</p>
+                        <a href="#" class="btn btn-primary btn-large" id="cta-btn">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.42.07 2.4.77 3.22.83.98-.18 1.92-.91 3.21-.98 1.56-.1 2.96.65 3.85 1.8-3.4 2.04-2.83 6.6.85 7.85-.62 1.56-1.44 3.1-3.13 4.38zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            Get Started for Free
+                        </a>
+                    </div>
+                    <figure class="cta-phones" aria-label="App screens preview">
+                        <img src="assets/image-4.jpg" alt="Report screen" class="cta-phone cta-back" loading="lazy">
+                        <img src="assets/image-1.jpg" alt="Home counter screen" class="cta-phone cta-front" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+                <a href="#" class="nav-logo" aria-label="Naam Japa Counter">
+                    <span class="logo-om">ॐ</span>
+                    <span>Naam Japa Counter</span>
+                </a>
+                <p>Made with devotion for seekers worldwide.</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </nav>
+
+            <div class="footer-social" aria-label="Social media">
+                <a href="#" aria-label="Twitter">
+                    <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Naam Japa Digital. Made with devotion for seekers worldwide.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger
+        const ham = document.getElementById('hamburger');
+        const menu = document.getElementById('mobile-menu');
+        ham.addEventListener('click', () => {
+            const open = menu.classList.toggle('open');
+            ham.classList.toggle('active', open);
+            ham.setAttribute('aria-expanded', open);
+        });
+        document.querySelectorAll('.mobile-link').forEach(l => {
+            l.addEventListener('click', () => {
+                menu.classList.remove('open');
+                ham.classList.remove('active');
+                ham.setAttribute('aria-expanded', false);
+            });
+        });
+
+        // Scroll shadow on header
+        const hdr = document.getElementById('site-header');
+        window.addEventListener('scroll', () => {
+            hdr.classList.toggle('scrolled', window.scrollY > 16);
+        }, { passive: true });
+
+        // Scroll fade-in
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
+
 </body>
 </html>
