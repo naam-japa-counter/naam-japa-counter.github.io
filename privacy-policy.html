@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Privacy Policy for Naam Japa Counter — Learn how dipuguide handles your data privately and securely."
+    />
+    <title>Privacy Policy — Naam Japa Counter | dipuguide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ── Privacy page specific typography ── */
+      .policy-hero {
+        padding: 130px 20px 48px;
+        text-align: center;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+      }
+      .policy-hero .label-tag {
+        margin-bottom: 12px;
+      }
+      .policy-hero h1 {
+        margin-bottom: 8px;
+      }
+      .policy-meta {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        margin-top: 6px;
+      }
+
+      /* Article layout */
+      .policy-body {
+        padding: 56px 0 80px;
+        background: var(--bg);
+      }
+      .policy-article {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* TOC */
+      .policy-toc {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 22px 26px;
+        margin-bottom: 40px;
+      }
+      .policy-toc p {
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-muted);
+        margin-bottom: 10px;
+      }
+      .policy-toc ol {
+        list-style: decimal;
+        padding-left: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .policy-toc li a {
+        font-size: 0.8rem;
+        color: var(--crimson);
+        font-weight: 500;
+        transition: opacity 0.2s;
+      }
+      .policy-toc li a:hover {
+        opacity: 0.75;
+      }
+
+      /* Section dividers */
+      .policy-section {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid var(--border-light);
+      }
+      .policy-section:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      /* Headings */
+      .policy-article h2 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin: 0 0 14px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--pink-soft);
+        letter-spacing: -0.01em;
+      }
+      .policy-article h3 {
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin: 20px 0 8px;
+      }
+      .policy-article h4 {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--crimson);
+        margin: 16px 0 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      /* Paragraphs */
+      .policy-article p {
+        font-size: 0.84rem;
+        color: var(--text-mid);
+        line-height: 1.78;
+        margin-bottom: 12px;
+      }
+      .policy-article p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Links */
+      .policy-article a {
+        color: var(--crimson);
+        text-decoration: underline;
+        text-decoration-color: var(--crimson-light);
+        text-underline-offset: 2px;
+        transition: text-decoration-color 0.2s;
+      }
+      .policy-article a:hover {
+        text-decoration-color: var(--crimson);
+      }
+
+      /* Lists */
+      .policy-article ul,
+      .policy-article ol {
+        padding-left: 20px;
+        margin: 10px 0 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+      .policy-article ul {
+        list-style: disc;
+      }
+      .policy-article ol {
+        list-style: decimal;
+      }
+      .policy-article li {
+        font-size: 0.83rem;
+        color: var(--text-mid);
+        line-height: 1.72;
+      }
+      .policy-article li p {
+        margin-bottom: 4px;
+      }
+
+      /* Nested lists */
+      .policy-article li ul,
+      .policy-article li ol {
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+      .policy-article li ul {
+        list-style: circle;
+      }
+
+      /* Strong */
+      .policy-article strong {
+        font-weight: 600;
+        color: var(--text-dark);
+      }
+
+      /* Contact highlight box */
+      .contact-box {
+        background: var(--pink-pale);
+        border: 1px solid var(--crimson-light);
+        border-radius: var(--radius-md);
+        padding: 18px 22px;
+        margin-top: 12px;
+      }
+      .contact-box p {
+        color: var(--text-dark);
+        font-weight: 500;
+      }
+      .contact-box a {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <header class="site-header" id="site-header">
+      <nav class="nav-container" aria-label="Main navigation">
+        <a
+          href="index.html"
+          class="nav-logo"
+          aria-label="Naam Japa Counter Home"
+        >
+          <span class="logo-om" aria-hidden="true">ॐ</span>
+          <span>Naam Japa</span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li>
+            <a href="privacy-policy.html" aria-current="page"
+              >Privacy & Policy</a
+            >
+          </li>
+        </ul>
+        <a
+          href="index.html#download"
+          class="btn btn-primary nav-cta"
+          id="nav-cta"
+          >Get App</a
+        >
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
+        <ul>
+          <li><a href="index.html#what-is" class="mobile-link">About</a></li>
+          <li>
+            <a href="index.html#how-to-use" class="mobile-link">How to Use</a>
+          </li>
+          <li>
+            <a href="index.html#features" class="mobile-link">Features</a>
+          </li>
+          <li><a href="index.html#faq" class="mobile-link">FAQ</a></li>
+          <li>
+            <a href="index.html#download" class="btn btn-primary mobile-link"
+              >Get App</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========== PAGE HERO ========== -->
+      <section class="policy-hero fade-up" aria-labelledby="pp-heading">
+        <span class="label-tag">Legal</span>
+        <h1 id="pp-heading">Privacy Policy</h1>
+        <p class="policy-meta">
+          Last updated: February 26, 2026 &nbsp;·&nbsp; dipuguide — Naam Japa
+          Counter
+        </p>
+      </section>
+
+      <!-- ========== ARTICLE ========== -->
+      <div class="policy-body">
+        <article class="policy-article">
+          <!-- Table of Contents -->
+          <nav class="policy-toc fade-up" aria-label="Table of contents">
+            <p>Contents</p>
+            <ol>
+              <li>
+                <a href="#pp-interpretation">Interpretation and Definitions</a>
+              </li>
+              <li>
+                <a href="#pp-collecting"
+                  >Collecting and Using Your Personal Data</a
+                >
+              </li>
+              <li>
+                <a href="#pp-retention">Retention of Your Personal Data</a>
+              </li>
+              <li><a href="#pp-transfer">Transfer of Your Personal Data</a></li>
+              <li><a href="#pp-delete">Delete Your Personal Data</a></li>
+              <li>
+                <a href="#pp-disclosure">Disclosure of Your Personal Data</a>
+              </li>
+              <li><a href="#pp-children">Children's Privacy</a></li>
+              <li><a href="#pp-links">Links to Other Websites</a></li>
+              <li><a href="#pp-changes">Changes to this Privacy Policy</a></li>
+              <li><a href="#pp-contact">Contact Us</a></li>
+            </ol>
+          </nav>
+
+          <!-- Intro -->
+          <div class="policy-section fade-up">
+            <p>
+              This Privacy Policy describes Our policies and procedures on the
+              collection, use and disclosure of Your information when You use
+              the Service and tells You about Your privacy rights and how the
+              law protects You.
+            </p>
+            <p>
+              We use Your Personal Data to provide and improve the Service. By
+              using the Service, You agree to the collection and use of
+              information in accordance with this Privacy Policy. This Privacy
+              Policy has been created with the help of the
+              <a
+                href="https://www.termsfeed.com/privacy-policy-generator/"
+                target="_blank"
+                rel="noopener"
+                >Privacy Policy Generator</a
+              >.
+            </p>
+          </div>
+
+          <!-- 1. Interpretation -->
+          <div class="policy-section" id="pp-interpretation">
+            <h2>1. Interpretation and Definitions</h2>
+            <h3>Interpretation</h3>
+            <p>
+              The words whose initial letters are capitalized have meanings
+              defined under the following conditions. The following definitions
+              shall have the same meaning regardless of whether they appear in
+              singular or in plural.
+            </p>
+            <h3>Definitions</h3>
+            <p>For the purposes of this Privacy Policy:</p>
+            <ul>
+              <li>
+                <p>
+                  <strong>Account</strong> means a unique account created for
+                  You to access our Service or parts of our Service.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Affiliate</strong> means an entity that controls, is
+                  controlled by, or is under common control with a party, where
+                  "control" means ownership of 50% or more of the shares, equity
+                  interest or other securities entitled to vote for election of
+                  directors or other managing authority.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Application</strong> refers to Naam Japa Counter, the
+                  software program provided by the Company.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Company</strong> (referred to as either "the Company",
+                  "We", "Us" or "Our" in this Privacy Policy) refers to Naam
+                  Japa Counter.
+                </p>
+              </li>
+              <li>
+                <p><strong>Country</strong> refers to: Uttar Pradesh, India</p>
+              </li>
+              <li>
+                <p>
+                  <strong>Device</strong> means any device that can access the
+                  Service such as a computer, a cell phone or a digital tablet.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Personal Data</strong> (or "Personal Information") is
+                  any information that relates to an identified or identifiable
+                  individual.
+                </p>
+                <p>
+                  We use "Personal Data" and "Personal Information"
+                  interchangeably unless a law uses a specific term.
+                </p>
+              </li>
+              <li>
+                <p><strong>Service</strong> refers to the Application.</p>
+              </li>
+              <li>
+                <p>
+                  <strong>Service Provider</strong> means any natural or legal
+                  person who processes the data on behalf of the Company. It
+                  refers to third-party companies or individuals employed by the
+                  Company to facilitate the Service, to provide the Service on
+                  behalf of the Company, to perform services related to the
+                  Service or to assist the Company in analyzing how the Service
+                  is used.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Usage Data</strong> refers to data collected
+                  automatically, either generated by the use of the Service or
+                  from the Service infrastructure itself (for example, the
+                  duration of a page visit).
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>You</strong> means the individual accessing or using
+                  the Service, or the company, or other legal entity on behalf
+                  of which such individual is accessing or using the Service, as
+                  applicable.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 2. Collecting -->
+          <div class="policy-section" id="pp-collecting">
+            <h2>2. Collecting and Using Your Personal Data</h2>
+            <h3>Types of Data Collected</h3>
+            <h4>Personal Data</h4>
+            <p>
+              While using Our Service, We may ask You to provide Us with certain
+              personally identifiable information that can be used to contact or
+              identify You. Personally identifiable information may include, but
+              is not limited to:
+            </p>
+            <h4>Usage Data</h4>
+            <p>Usage Data is collected automatically when using the Service.</p>
+            <p>
+              Usage Data may include information such as Your Device's Internet
+              Protocol address (e.g. IP address), browser type, browser version,
+              the pages of our Service that You visit, the time and date of Your
+              visit, the time spent on those pages, unique device identifiers
+              and other diagnostic data.
+            </p>
+            <p>
+              When You access the Service by or through a mobile device, We may
+              collect certain information automatically, including, but not
+              limited to, the type of mobile device You use, Your mobile
+              device's unique ID, the IP address of Your mobile device, Your
+              mobile operating system, the type of mobile Internet browser You
+              use, unique device identifiers and other diagnostic data.
+            </p>
+            <p>
+              We may also collect information that Your browser sends whenever
+              You visit Our Service or when You access the Service by or through
+              a mobile device.
+            </p>
+
+            <h3>Use of Your Personal Data</h3>
+            <p>The Company may use Personal Data for the following purposes:</p>
+            <ul>
+              <li>
+                <p>
+                  <strong>To provide and maintain our Service</strong>,
+                  including to monitor the usage of our Service.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>To manage Your Account:</strong> to manage Your
+                  registration as a user of the Service.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>For the performance of a contract:</strong> the
+                  development, compliance and undertaking of the purchase
+                  contract for the products, items or services You have
+                  purchased or of any other contract with Us through the
+                  Service.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>To contact You:</strong> To contact You by email,
+                  telephone calls, SMS, or other equivalent forms of electronic
+                  communication, such as a mobile application's push
+                  notifications regarding updates or informative communications
+                  related to the functionalities, products or contracted
+                  services, including the security updates, when necessary or
+                  reasonable for their implementation.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>To provide You</strong> with news, special offers, and
+                  general information about other goods, services and events
+                  which We offer that are similar to those that you have already
+                  purchased or inquired about unless You have opted not to
+                  receive such information.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>To manage Your requests:</strong> To attend and manage
+                  Your requests to Us.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>For business transfers:</strong> We may use Your
+                  Personal Data to evaluate or conduct a merger, divestiture,
+                  restructuring, reorganization, dissolution, or other sale or
+                  transfer of some or all of Our assets.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>For other purposes:</strong> We may use Your
+                  information for other purposes, such as data analysis,
+                  identifying usage trends, determining the effectiveness of our
+                  promotional campaigns and to evaluate and improve our Service.
+                </p>
+              </li>
+            </ul>
+
+            <p>We may share Your Personal Data in the following situations:</p>
+            <ul>
+              <li>
+                <strong>With Service Providers:</strong> We may share Your
+                Personal Data with Service Providers to monitor and analyze the
+                use of our Service, to contact You.
+              </li>
+              <li>
+                <strong>For business transfers:</strong> We may share or
+                transfer Your Personal Data in connection with, or during
+                negotiations of, any merger, sale of Company assets, financing,
+                or acquisition of all or a portion of Our business to another
+                company.
+              </li>
+              <li>
+                <strong>With Affiliates:</strong> We may share Your Personal
+                Data with Our affiliates, in which case we will require those
+                affiliates to honor this Privacy Policy.
+              </li>
+              <li>
+                <strong>With business partners:</strong> We may share Your
+                Personal Data with Our business partners to offer You certain
+                products, services or promotions.
+              </li>
+              <li>
+                <strong>With other users:</strong> when You share Personal Data
+                or otherwise interact in the public areas with other users, such
+                information may be viewed by all users.
+              </li>
+              <li>
+                <strong>With Your consent:</strong> We may disclose Your
+                Personal Data for any other purpose with Your consent.
+              </li>
+            </ul>
+          </div>
+
+          <!-- 3. Retention -->
+          <div class="policy-section" id="pp-retention">
+            <h2>3. Retention of Your Personal Data</h2>
+            <p>
+              The Company will retain Your Personal Data only for as long as is
+              necessary for the purposes set out in this Privacy Policy. We will
+              retain and use Your Personal Data to the extent necessary to
+              comply with our legal obligations, resolve disputes, and enforce
+              our legal agreements and policies.
+            </p>
+            <p>
+              We apply different retention periods to different categories of
+              Personal Data:
+            </p>
+            <ul>
+              <li>
+                <p><strong>Account Information</strong></p>
+                <ul>
+                  <li>
+                    User Accounts: retained for the duration of your account
+                    relationship plus up to 24 months after account closure.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>Usage Data</strong></p>
+                <ul>
+                  <li>Application usage statistics: up to 24 months.</li>
+                  <li>
+                    Server logs (IP addresses, access times): up to 24 months
+                    for security monitoring.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p>
+              We may retain Personal Data beyond the periods stated above for
+              legal obligation, legal claims, or at your explicit request.
+            </p>
+          </div>
+
+          <!-- 4. Transfer -->
+          <div class="policy-section" id="pp-transfer">
+            <h2>4. Transfer of Your Personal Data</h2>
+            <p>
+              Your information, including Personal Data, is processed at the
+              Company's operating offices and in any other places where the
+              parties involved in the processing are located. The Company will
+              take all steps reasonably necessary to ensure that Your data is
+              treated securely and in accordance with this Privacy Policy.
+            </p>
+          </div>
+
+          <!-- 5. Delete -->
+          <div class="policy-section" id="pp-delete">
+            <h2>5. Delete Your Personal Data</h2>
+            <p>
+              You have the right to delete or request that We assist in deleting
+              the Personal Data that We have collected about You.
+            </p>
+            <p>
+              You may update, amend, or delete Your information at any time by
+              visiting the account settings section or by contacting Us
+              directly.
+            </p>
+            <p>
+              Please note, however, that We may need to retain certain
+              information when we have a legal obligation or lawful basis to do
+              so.
+            </p>
+          </div>
+
+          <!-- 6. Disclosure -->
+          <div class="policy-section" id="pp-disclosure">
+            <h2>6. Disclosure of Your Personal Data</h2>
+            <h3>Business Transactions</h3>
+            <p>
+              If the Company is involved in a merger, acquisition or asset sale,
+              Your Personal Data may be transferred. We will provide notice
+              before Your Personal Data is transferred.
+            </p>
+            <h3>Law Enforcement</h3>
+            <p>
+              Under certain circumstances, the Company may be required to
+              disclose Your Personal Data if required to do so by law or in
+              response to valid requests by public authorities.
+            </p>
+            <h3>Other Legal Requirements</h3>
+            <p>
+              The Company may disclose Your Personal Data in the good faith
+              belief that such action is necessary to:
+            </p>
+            <ul>
+              <li>Comply with a legal obligation</li>
+              <li>Protect and defend the rights or property of the Company</li>
+              <li>
+                Prevent or investigate possible wrongdoing in connection with
+                the Service
+              </li>
+              <li>
+                Protect the personal safety of Users of the Service or the
+                public
+              </li>
+              <li>Protect against legal liability</li>
+            </ul>
+            <h3>Security of Your Personal Data</h3>
+            <p>
+              The security of Your Personal Data is important to Us, but
+              remember that no method of transmission over the Internet, or
+              method of electronic storage is 100% secure. While We strive to
+              use commercially reasonable means to protect Your Personal Data,
+              We cannot guarantee its absolute security.
+            </p>
+          </div>
+
+          <!-- 7. Children -->
+          <div class="policy-section" id="pp-children">
+            <h2>7. Children's Privacy</h2>
+            <p>
+              Our Service does not address anyone under the age of 16. We do not
+              knowingly collect personally identifiable information from anyone
+              under the age of 16. If You are a parent or guardian and You are
+              aware that Your child has provided Us with Personal Data, please
+              contact Us.
+            </p>
+          </div>
+
+          <!-- 8. Links -->
+          <div class="policy-section" id="pp-links">
+            <h2>8. Links to Other Websites</h2>
+            <p>
+              Our Service may contain links to other websites that are not
+              operated by Us. We strongly advise You to review the Privacy
+              Policy of every site You visit. We have no control over and assume
+              no responsibility for the content, privacy policies or practices
+              of any third party sites or services.
+            </p>
+          </div>
+
+          <!-- 9. Changes -->
+          <div class="policy-section" id="pp-changes">
+            <h2>9. Changes to this Privacy Policy</h2>
+            <p>
+              We may update Our Privacy Policy from time to time. We will notify
+              You of any changes by posting the new Privacy Policy on this page
+              and updating the "Last updated" date at the top of this Privacy
+              Policy.
+            </p>
+            <p>
+              You are advised to review this Privacy Policy periodically for any
+              changes. Changes to this Privacy Policy are effective when they
+              are posted on this page.
+            </p>
+          </div>
+
+          <!-- 10. Contact -->
+          <div class="policy-section" id="pp-contact">
+            <h2>10. Contact Us</h2>
+            <p>
+              If you have any questions about this Privacy Policy, You can
+              contact us:
+            </p>
+            <div class="contact-box">
+              <p>
+                <svg
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                  style="vertical-align: middle; margin-right: 4px"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                By email:
+                <a href="mailto:dipuguide@gmail.com">dipuguide@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Naam Japa Counter">
+            <span class="logo-om" aria-hidden="true">ॐ</span>
+            <span>Naam Japa Counter</span>
+          </a>
+          <p>
+            Your simple digital japa &amp; mala counter for daily sadhana. Made
+            with devotion for seekers worldwide.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html#what-is">About App</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="about-us.html">About Us</a>
+          <a href="mailto:dipuguide@gmail.com">Contact Us</a>
+        </nav>
+        <div class="footer-social" aria-label="Social media">
+          <a href="#" aria-label="Twitter / X">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2025 dipuguide — Naam Japa Counter. Made with devotion in India.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
