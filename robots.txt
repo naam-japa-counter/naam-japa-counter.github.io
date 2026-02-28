@@ -1,0 +1,8 @@
+# Robots.txt for Studentoo - Naam Japa Counter
+# https://naamjapacounter.github.io/
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://naamjapacounter.github.io/sitemap.xml
