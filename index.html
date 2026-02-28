@@ -1,849 +1,1140 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Naam Japa Counter — A simple, trusted digital japa counter for Radha Naam Jap, mantra counting, and daily sadhana. 100% offline and private."
+    />
+    <meta
+      name="keywords"
+      content="naam japa counter, digital japa counter, radha naam jap, jaap counter, mala counter, mantra jap counter"
+    />
+    <title>
+      Naam Japa Counter — Your Simple Digital Japa &amp; Mala Counter
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Naam Japa Counter — A simple, trusted digital japa counter for Radha Naam Jap, mantra counting, and daily sadhana. 100% offline and private." />
-  <meta name="keywords"
-    content="naam japa counter, digital japa counter, radha naam jap, jaap counter, mala counter, mantra jap counter" />
-  <title>
-    Naam Japa Counter — Your Simple Digital Japa &amp; Mala Counter
-  </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <!-- ========== NAVBAR ========== -->
-  <header class="site-header" id="site-header">
-    <nav class="nav-container" aria-label="Main navigation">
-      <a href="#" class="nav-logo" aria-label="Naam Japa Counter Home">
-        <span class="logo-om" aria-hidden="true">ॐ</span>
-        <span>Naam Japa</span>
-      </a>
-      <ul class="nav-links" role="list">
-        <li><a href="/">Home</a></li>
-        <li><a href="about-us.html">About</a></li>
-        <li><a href="privacy-policy.html">Privacy & Policy</a></li>
-      </ul>
-      <a href="#download" class="btn btn-primary nav-cta" id="nav-cta">Get App</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="about-us.html">About</a></li>
-        <li><a href="privacy-policy.html">Privacy & Policy</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main>
-    <article>
-      <!-- ========== HERO ========== -->
-      <section class="hero" id="hero" aria-labelledby="hero-heading">
-        <div class="hero-left fade-up">
-          <span class="badge">
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" viewBox="0 0 24 24" style="margin-right: 4px">
-              <circle cx="12" cy="12" r="10" />
-              <path
-                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-            </svg>
-            Simple &amp; Trusted Japa Counter
-          </span>
-          <h1 id="hero-heading">
-            Your Simple Digital Japa &amp; Mala Counter for
-            <span class="highlight">Daily Sadhana</span>
-          </h1>
-          <p class="hero-desc">
-            Welcome to your spiritual journey. If you are looking for a simple,
-            trusted, and easy-to-use naam japa counter, you are at the right
-            place. Our aim is to give devotees a peaceful digital space to track
-            their radha naam jap, mantra counts, and daily spiritual progress
-            without any disturbance.
-          </p>
-          <p class="hero-desc mt-0">
-            In today's busy life, it can be difficult to follow a regular
-            spiritual routine. Our app is made to be your daily companion,
-            helping you stay connected to Bhagwan with every tap.
-          </p>
-          <div class="hero-actions">
-            <a href="#download" class="btn btn-primary" id="hero-download-btn">
-              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.42.07 2.4.77 3.22.83.98-.18 1.92-.91 3.21-.98 1.56-.1 2.96.65 3.85 1.8-3.4 2.04-2.83 6.6.85 7.85-.62 1.56-1.44 3.1-3.13 4.38zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-              </svg>
-              Download on Play Store
-            </a>
-            <a href="#what-is" class="btn btn-outline">Learn More</a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <strong>50K+</strong><span>Active Users</span>
-            </div>
-            <div class="stat-sep" aria-hidden="true"></div>
-            <div class="stat">
-              <strong>4.9 ★</strong><span>Play Store</span>
-            </div>
-            <div class="stat-sep" aria-hidden="true"></div>
-            <div class="stat"><strong>100%</strong><span>Offline</span></div>
-          </div>
-        </div>
-        <figure class="hero-right fade-up delay-1" aria-label="Naam Japa Counter app home screen">
-          <div class="phone-wrap">
-            <img src="assets/image-1.jpg"
-              alt="Naam Japa Counter home screen showing Hare Krishna counter with mala ring" class="phone-img"
-              width="260" />
-            <div class="phone-badge" aria-hidden="true">
-              <svg width="12" height="12" fill="currentColor" stroke="none" viewBox="0 0 24 24"
-                style="margin-right: 4px">
-                <path
-                  d="M12 2c0 1.5-1 3-2.5 4-2.5 1.5-3.5 4-3.5 6.5s2 5.5 6 5.5 6-3 6-5.5-1.5-4.5-4-6c-1-0.5-2-1.5-2-3.5z" />
-              </svg>
-              7 Day Streak
-            </div>
-          </div>
-        </figure>
-      </section>
-
-      <!-- ========== WHAT IS ========== -->
-      <section class="what-is" id="what-is" aria-labelledby="what-is-heading">
-        <div class="container what-is-layout">
-          <figure class="wi-image fade-up" aria-label="Focus mode screen">
-            <img src="assets/image-8.jpg" alt="Focus mode screen showing Hare Krishna chanting with mala ring"
-              loading="lazy" width="240" />
-          </figure>
-          <div class="wi-content fade-up delay-1">
-            <span class="label-tag">What is a Naam Japa Counter?</span>
-            <h2 id="what-is-heading">
-              More Than a Counting Tool — A Path to Devotion
-            </h2>
-            <p>
-              A naam japa counter helps you stay disciplined in doing
-              <strong>"Japa"</strong> — repeating a mantra or divine name with
-              focus and devotion. Traditionally, people use a Mala (prayer
-              beads) with 108 beads for counting. But in modern life, carrying a
-              Mala everywhere is not always easy.
-            </p>
-            <p>
-              That is why a digital japa counter is very useful. Our naam jaap
-              counter gives you a similar feeling like using a real Mala, along
-              with the comfort of modern technology. You can track your sessions
-              even without internet, check your mala counter progress, and
-              slowly build a strong daily habit.
-            </p>
-            <p>
-              Whether you chant radha naam jap, Ram naam, or any other mantra,
-              this mantra jap counter makes sure you never lose count. It brings
-              devotion and remembrance into your pocket.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== HOW TO USE ========== -->
-      <section class="how-to-use" id="how-to-use" aria-labelledby="how-heading">
-        <div class="container">
-          <header class="section-header fade-up">
-            <span class="label-tag">How to Use</span>
-            <h2 id="how-heading">How to Use the Naam Japa Counter App</h2>
-            <p>
-              We believe spiritual technology should be simple. Our jaap counter
-              is easy to use, so you can focus on chanting, not on the screen.
-            </p>
-          </header>
-
-          <div class="steps-layout">
-            <div class="steps-list">
-              <article class="step-card fade-up" id="step-1">
-                <div class="step-num" aria-hidden="true">1</div>
-                <div class="step-body">
-                  <h3>Choose Your Mantra</h3>
-                  <p>
-                    When you open the app, you can select from ready mantras or
-                    add your own. Whether it is radha naam jap or any Vedic
-                    mantra, the app supports all.
-                  </p>
-                </div>
-              </article>
-
-              <article class="step-card fade-up delay-1" id="step-2">
-                <div class="step-num" aria-hidden="true">2</div>
-                <div class="step-body">
-                  <h3>Enter Focus Mode</h3>
-                  <p>
-                    For better concentration, use Focus Mode. This screen
-                    removes extra buttons and shows a big tapping area with a
-                    timer. You can track both count and time of your chanting.
-                  </p>
-                </div>
-              </article>
-
-              <article class="step-card fade-up delay-2" id="step-3">
-                <div class="step-num" aria-hidden="true">3</div>
-                <div class="step-body">
-                  <h3>Start Chanting</h3>
-                  <p>
-                    With every chant, tap the screen once. The jaap counter will
-                    increase with each tap. You will feel a soft vibration, just
-                    like moving one bead of a Mala.
-                  </p>
-                </div>
-              </article>
-
-              <article class="step-card fade-up delay-3" id="step-4">
-                <div class="step-num" aria-hidden="true">4</div>
-                <div class="step-body">
-                  <h3>Continuous Mala Counting</h3>
-                  <p>
-                    After every 108 chants, the mala counter increases by one
-                    automatically, and the japa count starts again from zero.
-                    This makes long sessions smooth and easy.
-                  </p>
-                </div>
-              </article>
-
-              <article class="step-card fade-up delay-4" id="step-5">
-                <div class="step-num" aria-hidden="true">5</div>
-                <div class="step-body">
-                  <h3>Review and Save</h3>
-                  <p>
-                    After finishing, press save. Your session will be stored in
-                    the history section. You can see your total naam jaap
-                    counter details, time spent, and mantra used.
-                  </p>
-                </div>
-              </article>
-            </div>
-
-            <div class="steps-phones fade-up delay-2">
-              <figure class="sp-phone sp-back" aria-label="Main app counter screen">
-                <img src="assets/image-1.jpg" alt="Hare Krishna counter home screen" loading="lazy" />
-              </figure>
-              <figure class="sp-phone sp-front" aria-label="Focus mode screen">
-                <img src="assets/image-8.jpg" alt="Focus mode tapping screen" loading="lazy" />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== SACRED SCIENCE ========== -->
-      <section class="sacred" id="sacred" aria-labelledby="sacred-heading">
-        <div class="container sacred-layout">
-          <div class="sacred-content fade-up">
-            <span class="label-tag">Sacred Science</span>
-            <h2 id="sacred-heading">
-              From Ancient Beads to
-              <span class="highlight">Digital Counters</span>
-            </h2>
-            <p>
-              Japa is an ancient spiritual practice from India. The word comes
-              from Sanskrit, meaning to softly repeat or chant. For thousands of
-              years, people used Japa Malas made from Tulsi, Neem, or Rudraksha
-              beads. These were believed to carry spiritual energy.
-            </p>
-            <p>
-              Today, life has changed, but our spiritual needs are the same. A
-              naam japa counter is a modern form of this old tradition. Just
-              like saints kept their malas safe in cloth bags, our digital japa
-              counter gives you a clean, ad-free space inside your phone.
-            </p>
-            <p>
-              When you use a mantra jap counter, you are not only counting
-              numbers. You are building discipline and devotion. Whether you
-              chant radha naam jap for divine love or for peace of mind, keeping
-              count helps your mind stay focused.
-            </p>
-          </div>
-          <figure class="sacred-image fade-up delay-1" aria-label="History and session log screen">
-            <img src="assets/image-5.jpg" alt="History screen listing Radha Radha japa sessions with counts and times"
-              loading="lazy" width="240" />
-          </figure>
-        </div>
-      </section>
-
-      <!-- ========== 10 TIPS ========== -->
-      <section class="tips-section" id="tips" aria-labelledby="tips-heading">
-        <div class="container">
-          <header class="section-header fade-up">
-            <span class="label-tag">10 Tips</span>
-            <h2 id="tips-heading">Build a Strong Chanting Habit</h2>
-            <p>
-              A naam jaap counter is a tool, but real change comes from regular
-              practice. Here are some simple tips.
-            </p>
-          </header>
-
-          <div class="tips-layout">
-            <div class="tips-grid" role="list">
-              <article class="tip-card fade-up" role="listitem">
-                <span class="tip-num" aria-hidden="true">01</span>
-                <h3>Start Small</h3>
-                <p>Begin with 1 mala (108 chants) using the jaap counter.</p>
-              </article>
-
-              <article class="tip-card fade-up delay-1" role="listitem">
-                <span class="tip-num" aria-hidden="true">02</span>
-                <h3>Fixed Time</h3>
-                <p>Chant at the same time daily. Use reminders in the app.</p>
-              </article>
-
-              <article class="tip-card fade-up delay-2" role="listitem">
-                <span class="tip-num" aria-hidden="true">03</span>
-                <h3>Use Focus Mode</h3>
-                <p>
-                  Keep only the mantra counter on your screen for full
-                  concentration.
-                </p>
-              </article>
-
-              <article class="tip-card fade-up delay-1" role="listitem">
-                <span class="tip-num" aria-hidden="true">04</span>
-                <h3>Check Heatmap</h3>
-                <p>See your daily progress and avoid gaps in your practice.</p>
-              </article>
-
-              <article class="tip-card fade-up delay-2" role="listitem">
-                <span class="tip-num" aria-hidden="true">05</span>
-                <h3>Create a Ritual</h3>
-                <p>
-                  Take three deep breaths before opening the radha naam jap
-                  counter.
-                </p>
-              </article>
-
-              <article class="tip-card fade-up delay-3" role="listitem">
-                <span class="tip-num" aria-hidden="true">06</span>
-                <h3>Track Streak</h3>
-                <p>
-                  A 30-day streak in your naam jaap counter gives great
-                  motivation.
-                </p>
-              </article>
-
-              <article class="tip-card fade-up" role="listitem">
-                <span class="tip-num" aria-hidden="true">07</span>
-                <h3>Feel the Vibration</h3>
-                <p>Let each vibration of the jaap counter guide your focus.</p>
-              </article>
-
-              <article class="tip-card fade-up delay-1" role="listitem">
-                <span class="tip-num" aria-hidden="true">08</span>
-                <h3>Review Weekly</h3>
-                <p>
-                  Check your japa counter report every weekend and plan ahead.
-                </p>
-              </article>
-
-              <article class="tip-card fade-up delay-2" role="listitem">
-                <span class="tip-num" aria-hidden="true">09</span>
-                <h3>Add Personal Mantras</h3>
-                <p>
-                  Use the mantra counter for any prayer you like, not just
-                  presets.
-                </p>
-              </article>
-
-              <article class="tip-card fade-up delay-3" role="listitem">
-                <span class="tip-num" aria-hidden="true">10</span>
-                <h3>Chant Together</h3>
-                <p>
-                  Share progress with friends and family for positive support.
-                </p>
-              </article>
-            </div>
-
-            <figure class="tips-image fade-up delay-2" aria-label="Report and progress screen">
-              <img src="assets/image-4.jpg"
-                alt="Report screen showing current streak, weekly progress dot tracker, lifetime japa, and hours"
-                loading="lazy" width="230" />
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== PRIVACY ========== -->
-      <section class="privacy-section" id="privacy" aria-labelledby="privacy-heading">
-        <div class="container privacy-layout">
-          <figure class="priv-image fade-up" aria-label="Reminders screen">
-            <img src="assets/image-9.jpg"
-              alt="Reminders screen showing Ram Ram daily alert with toggle and time setting" loading="lazy"
-              width="230" />
-          </figure>
-          <div class="priv-content fade-up delay-1">
-            <span class="label-tag">100% Private</span>
-            <h2 id="privacy-heading">
-              Why Privacy Matters for
-              <span class="highlight">Spiritual Practice</span>
-            </h2>
-            <p>
-              Your spiritual journey is personal. Many naam jaap counter online
-              apps ask for login and store your data online. We believe your
-              radha naam jap is between you and God. Our digital japa counter
-              works fully on your phone.
-            </p>
-            <ul class="priv-list" role="list">
-              <li>
-                <span class="priv-icon" aria-hidden="true">
-                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  </svg>
-                </span>
-                <div>
-                  <strong>No Login Needed</strong>
-                  <p>Open and start chanting. No accounts, no passwords.</p>
-                </div>
-              </li>
-              <li>
-                <span class="priv-icon" aria-hidden="true">
-                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <rect x="2" y="3" width="20" height="14" rx="2" />
-                    <path d="M8 21h8M12 17v4" />
-                  </svg>
-                </span>
-                <div>
-                  <strong>No Cloud Storage</strong>
-                  <p>Your data is never uploaded to any server.</p>
-                </div>
-              </li>
-              <li>
-                <span class="priv-icon" aria-hidden="true">
-                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <rect x="5" y="11" width="14" height="10" rx="2" />
-                    <path d="M8 11V7a4 4 0 0 1 8 0v4" />
-                  </svg>
-                </span>
-                <div>
-                  <strong>Safe Local Data Storage</strong>
-                  <p>
-                    Everything stays on your device — fully in your control.
-                  </p>
-                </div>
-              </li>
-            </ul>
-            <p class="priv-footer">
-              When you use our radha naam counter, your sadhana stays private.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== COMPARISON TABLE ========== -->
-      <section class="comparison" id="comparison" aria-labelledby="comparison-heading">
-        <div class="container">
-          <header class="section-header fade-up">
-            <span class="label-tag">Comparison</span>
-            <h2 id="comparison-heading">Beads vs. Mechanical vs. Digital</h2>
-            <p>
-              See how our Naam Japa Counter app compares to traditional methods
-              for modern devotees.
-            </p>
-          </header>
-          <div class="table-wrap fade-up">
-            <table class="compare-table" role="table" aria-label="Comparison of japa counter methods">
-              <thead>
-                <tr>
-                  <th scope="col">Feature</th>
-                  <th scope="col">Japa Mala (Beads)</th>
-                  <th scope="col">Mechanical Counter</th>
-                  <th scope="col" class="highlight-col">
-                    Naam Japa Counter App ✓
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Portability</td>
-                  <td>Difficult in office</td>
-                  <td>Small device</td>
-                  <td class="highlight-col">Always in phone</td>
-                </tr>
-                <tr>
-                  <td>Durability</td>
-                  <td>Thread may break</td>
-                  <td>Can stop working</td>
-                  <td class="highlight-col">Works with phone</td>
-                </tr>
-                <tr>
-                  <td>History</td>
-                  <td>No record</td>
-                  <td>Manual reset</td>
-                  <td class="highlight-col">Automatic record</td>
-                </tr>
-                <tr>
-                  <td>Sound</td>
-                  <td>Silent</td>
-                  <td>Clicking sound</td>
-                  <td class="highlight-col">Silent vibration</td>
-                </tr>
-                <tr>
-                  <td>Goals</td>
-                  <td>Fixed 108</td>
-                  <td>One goal</td>
-                  <td class="highlight-col">Custom goals</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="table-note fade-up">
-            While real beads have a special feeling, the Naam Japa Counter app
-            gives full support for today's busy life. It is a helpful mantra jap
-            counter for modern devotees.
-          </p>
-        </div>
-      </section>
-
-      <!-- ========== 6 FEATURES ========== -->
-      <section class="features" id="features" aria-labelledby="features-heading">
-        <div class="container">
-          <header class="section-header fade-up">
-            <span class="label-tag">6 Main Features</span>
-            <h2 id="features-heading">
-              Designed for Today's Spiritual Seekers
-            </h2>
-            <p>
-              Our Japa counter is built with care, combining modern technology
-              with the needs of a sincere devotee.
-            </p>
-          </header>
-          <div class="features-grid" role="list">
-            <article class="feat-card fade-up" role="listitem" id="feat-offline">
-              <figure class="feat-img-wrap" aria-label="App working offline">
-                <img src="assets/image-7.jpg"
-                  alt="Settings screen showing offline status, dark mode and reminders options" loading="lazy" />
-              </figure>
-              <div class="feat-info">
-                <span class="feat-num" aria-hidden="true">01</span>
-                <h3>Fully Offline &amp; Private</h3>
-                <p>
-                  Unlike many naam jaap counter online tools, this app works
-                  without internet. Your data stays on your phone.
-                </p>
-              </div>
-            </article>
-
-            <article class="feat-card fade-up delay-1" role="listitem" id="feat-tracking">
-              <figure class="feat-img-wrap" aria-label="Home screen with japa and mala tracking">
-                <img src="assets/image-1.jpg" alt="Naam Japa Counter home showing Japa 0, Mala 0, Time display"
-                  loading="lazy" />
-              </figure>
-              <div class="feat-info">
-                <span class="feat-num" aria-hidden="true">02</span>
-                <h3>Smart Mala &amp; Japa Tracking</h3>
-                <p>
-                  The jaap counter tracks each chant, and the mala counter
-                  tracks every 108 chants. You get a full view of your progress.
-                </p>
-              </div>
-            </article>
-
-            <article class="feat-card fade-up delay-2" role="listitem" id="feat-heatmap">
-              <figure class="feat-img-wrap" aria-label="Consistency heatmap screen">
-                <img src="assets/image-3.jpg" alt="Consistency heatmap calendar showing 260 total japa this month"
-                  loading="lazy" />
-              </figure>
-              <div class="feat-info">
-                <span class="feat-num" aria-hidden="true">03</span>
-                <h3>Consistency Heatmap</h3>
-                <p>
-                  See your daily chanting in a simple heatmap view. It helps you
-                  stay regular and build a strong habit.
-                </p>
-              </div>
-            </article>
-
-            <article class="feat-card fade-up" role="listitem" id="feat-reminders">
-              <figure class="feat-img-wrap" aria-label="Reminders screen">
-                <img src="assets/image-9.jpg" alt="Reminders screen showing Ram Ram daily alert with time 06:07 PM"
-                  loading="lazy" />
-              </figure>
-              <div class="feat-info">
-                <span class="feat-num" aria-hidden="true">04</span>
-                <h3>Custom Reminders</h3>
-                <p>
-                  Set reminders for morning or evening chanting. Your radha naam
-                  counter will gently remind you daily.
-                </p>
-              </div>
-            </article>
-
-            <article class="feat-card fade-up delay-1" role="listitem" id="feat-language">
-              <figure class="feat-img-wrap" aria-label="Stories in Hindi and other languages">
-                <img src="assets/image-6.jpg" alt="Hindu Stories screen with Hindi language stories listed"
-                  loading="lazy" />
-              </figure>
-              <div class="feat-info">
-                <span class="feat-num" aria-hidden="true">05</span>
-                <h3>Multi-Language Support</h3>
-                <p>
-                  Our japa counter supports English, Hindi (हिन्दी), Gujarati
-                  (ગુજરાતી), and Marathi (मराठी), so everyone feels comfortable.
-                </p>
-              </div>
-            </article>
-
-            <article class="feat-card fade-up delay-2" role="listitem" id="feat-focus">
-              <figure class="feat-img-wrap" aria-label="Focus mode app screen">
-                <img src="assets/image-8.jpg" alt="Focus mode screen with large tap to chant button and mala ring"
-                  loading="lazy" />
-              </figure>
-              <div class="feat-info">
-                <span class="feat-num" aria-hidden="true">06</span>
-                <h3>Focus Mode with Vibration</h3>
-                <p>
-                  Focus Mode removes distractions. With soft vibration feedback,
-                  your radha naam jap feels peaceful and natural.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== WHY DIGITAL ========== -->
-      <section class="why-digital" id="why-digital" aria-labelledby="why-heading">
-        <div class="container why-layout">
-          <div class="why-phones fade-up">
-            <figure class="wd-phone wd-back" aria-label="Insights chart screen">
-              <img src="assets/image-2.jpg" alt="Weekly insights bar chart showing japa count per day" loading="lazy" />
-            </figure>
-            <figure class="wd-phone wd-front" aria-label="Report screen">
-              <img src="assets/image-4.jpg" alt="Report screen with streak, weekly progress, and lifetime counter"
-                loading="lazy" />
-            </figure>
-          </div>
-
-          <div class="why-content fade-up delay-1">
-            <span class="label-tag">Why Digital?</span>
-            <h2 id="why-heading">
-              Why a Digital Japa Counter is
-              <span class="highlight">Helpful Today</span>
-            </h2>
-            <p>
-              A digital japa counter fits the modern lifestyle without
-              compromising your spiritual depth.
-            </p>
-            <ul class="why-list" role="list">
-              <li>
-                <span class="why-icon" aria-hidden="true">
-                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" viewBox="0 0 24 24">
-                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-                    <line x1="12" y1="18" x2="12.01" y2="18" />
-                  </svg>
-                </span>
-                <div>
-                  <strong>Easy to Carry</strong>
-                  <p>
-                    Your naam jaap counter is always with your phone — no extra
-                    item to carry.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <span class="why-icon" aria-hidden="true">
-                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M18 20V10M12 20V4M6 20v-6" />
-                  </svg>
-                </span>
-                <div>
-                  <strong>Accurate Record</strong>
-                  <p>
-                    Check your complete japa history anytime, with time and date
-                    stamps.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <span class="why-icon" aria-hidden="true">
-                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                  </svg>
-                </span>
-                <div>
-                  <strong>Motivation</strong>
-                  <p>
-                    Heatmap and streak features keep you inspired and consistent
-                    every day.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <span class="why-icon" aria-hidden="true">
-                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M11 5L6 9H2v6h4l5 4V5zM22 9l-6 6M16 9l6 6" />
-                  </svg>
-                </span>
-                <div>
-                  <strong>Silent Use</strong>
-                  <p>
-                    No sound, only gentle vibration — perfect for chanting
-                    anywhere.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== DOWNLOAD CTA ========== -->
-      <section class="cta-section" id="download" aria-labelledby="cta-heading">
-        <div class="container">
-          <div class="cta-card fade-up">
-            <div class="cta-text">
-              <h2 id="cta-heading">Begin Your Journey Today</h2>
-              <p>
-                The path of radha naam jap is full of love and dedication. By
-                mixing ancient mantra practice with a digital japa counter, we
-                help you stay peaceful and focused daily. Whether you chant one
-                mala or many, we are happy to support your journey.
-              </p>
-              <p>
-                Download the Naam Japa Counter app today and turn your phone
-                into a sacred companion.
-              </p>
-              <a href="#" class="btn btn-primary btn-large" id="cta-download-btn">
-                <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.42.07 2.4.77 3.22.83.98-.18 1.92-.91 3.21-.98 1.56-.1 2.96.65 3.85 1.8-3.4 2.04-2.83 6.6.85 7.85-.62 1.56-1.44 3.1-3.13 4.38zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                </svg>
-                Get Started for Free
-              </a>
-            </div>
-            <figure class="cta-phones" aria-label="App preview">
-              <img src="assets/image-4.jpg" alt="Report screen" class="cta-phone cta-back" loading="lazy" />
-              <img src="assets/image-1.jpg" alt="Counter screen" class="cta-phone cta-front" loading="lazy" />
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== FAQ ========== -->
-      <section class="faq-section" id="faq" aria-labelledby="faq-heading">
-        <div class="container faq-container">
-          <header class="section-header fade-up">
-            <span class="label-tag">FAQ</span>
-            <h2 id="faq-heading">Frequently Asked Questions</h2>
-            <p>Everything you need to know about our naam japa counter app.</p>
-          </header>
-
-          <div class="faq-grid" role="list">
-            <article class="faq-card fade-up" role="listitem">
-              <h3>
-                What is the difference between a Jaap counter and a Mala
-                counter?
-              </h3>
-              <p>
-                A jaap counter counts each chant. A mala counter counts every
-                108 chants as one round. In our app, both work together
-                automatically — so you never lose track.
-              </p>
-            </article>
-
-            <article class="faq-card fade-up delay-1" role="listitem">
-              <h3>Can I use this as a Radha Naam Jap counter?</h3>
-              <p>
-                Yes. You can set radha naam jap as your mantra and track it
-                separately every day. You can also add any mantra of your
-                choice.
-              </p>
-            </article>
-
-            <article class="faq-card fade-up delay-2" role="listitem">
-              <h3>Is my data safe in this digital japa counter?</h3>
-              <p>
-                Yes. Unlike most naam jaap counter online apps, we do not store
-                your data online. Everything stays securely on your phone with
-                no login required.
-              </p>
-            </article>
-
-            <article class="faq-card fade-up" role="listitem">
-              <h3>Can I add my own mantra?</h3>
-              <p>
-                Yes. You can add any mantra in the mantra jap counter and track
-                it separately from other mantras in your daily sadhana.
-              </p>
-            </article>
-
-            <article class="faq-card fade-up delay-1" role="listitem">
-              <h3>Does the app work without internet?</h3>
-              <p>
-                Yes. The naam jaap counter works 100% offline. No internet
-                connection is required at any time — your sadhana is never
-                interrupted.
-              </p>
-            </article>
-
-            <article class="faq-card fade-up delay-2" role="listitem">
-              <h3>How can I set reminders for Radha Naam Jap?</h3>
-              <p>
-                Go to settings and open the reminders section. Set the time, and
-                your radha naam counter will remind you gently every day at your
-                chosen time.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </article>
-  </main>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo" aria-label="Naam Japa Counter Home">
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <header class="site-header" id="site-header">
+      <nav class="nav-container" aria-label="Main navigation">
+        <a href="/" class="nav-logo" aria-label="Naam Japa Counter Home">
           <span class="logo-om" aria-hidden="true">ॐ</span>
-          <span>Naam Japa Counter</span>
+          <span>Naam Japa</span>
         </a>
+        <ul class="nav-links" role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="privacy-policy.html">Privacy & Policy</a></li>
+        </ul>
+        <a href="#download" class="btn btn-primary nav-cta" id="nav-cta"
+          >Get App</a
+        >
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="privacy-policy.html">Privacy & Policy</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="hero" aria-labelledby="hero-heading">
+          <div class="hero-left fade-up">
+            <span class="badge">
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                viewBox="0 0 24 24"
+                style="margin-right: 4px"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                />
+              </svg>
+              Simple &amp; Trusted Japa Counter
+            </span>
+            <h1 id="hero-heading">
+              Your Simple Digital Japa &amp; Mala Counter for
+              <span class="highlight">Daily Sadhana</span>
+            </h1>
+            <p class="hero-desc">
+              Welcome to your spiritual journey. If you are looking for a
+              simple, trusted, and easy-to-use naam japa counter, you are at the
+              right place. Our aim is to give devotees a peaceful digital space
+              to track their radha naam jap, mantra counts, and daily spiritual
+              progress without any disturbance.
+            </p>
+            <div class="hero-actions">
+              <a href="#" class="btn btn-primary" id="hero-download-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-play-icon lucide-play"
+                >
+                  <path
+                    d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+                  />
+                </svg>
+                Download on Play Store
+              </a>
+              <a href="#" class="btn btn-outline"> Download on Indus Store </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <strong>1K+</strong><span>Active Users</span>
+              </div>
+              <div class="stat-sep" aria-hidden="true"></div>
+              <div class="stat">
+                <strong>4.9 ★</strong><span>Play Store</span>
+              </div>
+              <div class="stat-sep" aria-hidden="true"></div>
+              <div class="stat"><strong>100%</strong><span>Offline</span></div>
+            </div>
+          </div>
+          <figure
+            class="hero-right fade-up delay-1"
+            aria-label="Naam Japa Counter app home screen"
+          >
+            <div class="phone-wrap">
+              <img
+                src="assets/image-1.jpg"
+                alt="Naam Japa Counter home screen showing Hare Krishna counter with mala ring"
+                class="phone-img"
+                width="260"
+              />
+              <div class="phone-badge" aria-hidden="true">
+                <svg
+                  width="12"
+                  height="12"
+                  fill="currentColor"
+                  stroke="none"
+                  viewBox="0 0 24 24"
+                  style="margin-right: 4px"
+                >
+                  <path
+                    d="M12 2c0 1.5-1 3-2.5 4-2.5 1.5-3.5 4-3.5 6.5s2 5.5 6 5.5 6-3 6-5.5-1.5-4.5-4-6c-1-0.5-2-1.5-2-3.5z"
+                  />
+                </svg>
+                7 Day Streak
+              </div>
+            </div>
+          </figure>
+        </section>
+
+        <!-- ========== WHAT IS ========== -->
+        <section class="what-is" id="what-is" aria-labelledby="what-is-heading">
+          <div class="container what-is-layout">
+            <figure class="wi-image fade-up" aria-label="Focus mode screen">
+              <img
+                src="assets/image-8.jpg"
+                alt="Focus mode screen showing Hare Krishna chanting with mala ring"
+                loading="lazy"
+                width="240"
+              />
+            </figure>
+            <div class="wi-content fade-up delay-1">
+              <span class="label-tag">What is a Naam Japa Counter?</span>
+              <h2 id="what-is-heading">
+                More Than a Counting Tool — A Path to Devotion
+              </h2>
+              <p>
+                A naam japa counter helps you stay disciplined in doing
+                <strong>"Japa"</strong> — repeating a mantra or divine name with
+                focus and devotion. Traditionally, people use a Mala (prayer
+                beads) with 108 beads for counting. But in modern life, carrying
+                a Mala everywhere is not always easy.
+              </p>
+              <p>
+                That is why a digital japa counter is very useful. Our naam jaap
+                counter gives you a similar feeling like using a real Mala,
+                along with the comfort of modern technology. You can track your
+                sessions even without internet, check your mala counter
+                progress, and slowly build a strong daily habit.
+              </p>
+              <p>
+                Whether you chant radha naam jap, Ram naam, or any other mantra,
+                this mantra jap counter makes sure you never lose count. It
+                brings devotion and remembrance into your pocket.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== HOW TO USE ========== -->
+        <section
+          class="how-to-use"
+          id="how-to-use"
+          aria-labelledby="how-heading"
+        >
+          <div class="container">
+            <header class="section-header fade-up">
+              <span class="label-tag">How to Use</span>
+              <h2 id="how-heading">How to Use the Naam Japa Counter App</h2>
+              <p>
+                We believe spiritual technology should be simple. Our jaap
+                counter is easy to use, so you can focus on chanting, not on the
+                screen.
+              </p>
+            </header>
+
+            <div class="steps-layout">
+              <div class="steps-list">
+                <article class="step-card fade-up" id="step-1">
+                  <div class="step-num" aria-hidden="true">1</div>
+                  <div class="step-body">
+                    <h3>Choose Your Mantra</h3>
+                    <p>
+                      When you open the app, you can select from ready mantras
+                      or add your own. Whether it is radha naam jap or any Vedic
+                      mantra, the app supports all.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="step-card fade-up delay-1" id="step-2">
+                  <div class="step-num" aria-hidden="true">2</div>
+                  <div class="step-body">
+                    <h3>Enter Focus Mode</h3>
+                    <p>
+                      For better concentration, use Focus Mode. This screen
+                      removes extra buttons and shows a big tapping area with a
+                      timer. You can track both count and time of your chanting.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="step-card fade-up delay-2" id="step-3">
+                  <div class="step-num" aria-hidden="true">3</div>
+                  <div class="step-body">
+                    <h3>Start Chanting</h3>
+                    <p>
+                      With every chant, tap the screen once. The jaap counter
+                      will increase with each tap. You will feel a soft
+                      vibration, just like moving one bead of a Mala.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="step-card fade-up delay-3" id="step-4">
+                  <div class="step-num" aria-hidden="true">4</div>
+                  <div class="step-body">
+                    <h3>Continuous Mala Counting</h3>
+                    <p>
+                      After every 108 chants, the mala counter increases by one
+                      automatically, and the japa count starts again from zero.
+                      This makes long sessions smooth and easy.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="step-card fade-up delay-4" id="step-5">
+                  <div class="step-num" aria-hidden="true">5</div>
+                  <div class="step-body">
+                    <h3>Review and Save</h3>
+                    <p>
+                      After finishing, press save. Your session will be stored
+                      in the history section. You can see your total naam jaap
+                      counter details, time spent, and mantra used.
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="steps-phones fade-up delay-2">
+                <figure
+                  class="sp-phone sp-back"
+                  aria-label="Main app counter screen"
+                >
+                  <img
+                    src="assets/image-1.jpg"
+                    alt="Hare Krishna counter home screen"
+                    loading="lazy"
+                  />
+                </figure>
+                <figure
+                  class="sp-phone sp-front"
+                  aria-label="Focus mode screen"
+                >
+                  <img
+                    src="assets/image-8.jpg"
+                    alt="Focus mode tapping screen"
+                    loading="lazy"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== SACRED SCIENCE ========== -->
+        <section class="sacred" id="sacred" aria-labelledby="sacred-heading">
+          <div class="container sacred-layout">
+            <div class="sacred-content fade-up">
+              <span class="label-tag">Sacred Science</span>
+              <h2 id="sacred-heading">
+                From Ancient Beads to
+                <span class="highlight">Digital Counters</span>
+              </h2>
+              <p>
+                Japa is an ancient spiritual practice from India. The word comes
+                from Sanskrit, meaning to softly repeat or chant. For thousands
+                of years, people used Japa Malas made from Tulsi, Neem, or
+                Rudraksha beads. These were believed to carry spiritual energy.
+              </p>
+              <p>
+                Today, life has changed, but our spiritual needs are the same. A
+                naam japa counter is a modern form of this old tradition. Just
+                like saints kept their malas safe in cloth bags, our digital
+                japa counter gives you a clean, ad-free space inside your phone.
+              </p>
+              <p>
+                When you use a mantra jap counter, you are not only counting
+                numbers. You are building discipline and devotion. Whether you
+                chant radha naam jap for divine love or for peace of mind,
+                keeping count helps your mind stay focused.
+              </p>
+            </div>
+            <figure
+              class="sacred-image fade-up delay-1"
+              aria-label="History and session log screen"
+            >
+              <img
+                src="assets/image-5.jpg"
+                alt="History screen listing Radha Radha japa sessions with counts and times"
+                loading="lazy"
+                width="240"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- ========== 10 TIPS ========== -->
+        <section class="tips-section" id="tips" aria-labelledby="tips-heading">
+          <div class="container">
+            <header class="section-header fade-up">
+              <span class="label-tag">10 Tips</span>
+              <h2 id="tips-heading">Build a Strong Chanting Habit</h2>
+              <p>
+                A naam jaap counter is a tool, but real change comes from
+                regular practice. Here are some simple tips.
+              </p>
+            </header>
+
+            <div class="tips-layout">
+              <div class="tips-grid" role="list">
+                <article class="tip-card fade-up" role="listitem">
+                  <span class="tip-num" aria-hidden="true">01</span>
+                  <h3>Start Small</h3>
+                  <p>Begin with 1 mala (108 chants) using the jaap counter.</p>
+                </article>
+
+                <article class="tip-card fade-up delay-1" role="listitem">
+                  <span class="tip-num" aria-hidden="true">02</span>
+                  <h3>Fixed Time</h3>
+                  <p>Chant at the same time daily. Use reminders in the app.</p>
+                </article>
+
+                <article class="tip-card fade-up delay-2" role="listitem">
+                  <span class="tip-num" aria-hidden="true">03</span>
+                  <h3>Use Focus Mode</h3>
+                  <p>
+                    Keep only the mantra counter on your screen for full
+                    concentration.
+                  </p>
+                </article>
+
+                <article class="tip-card fade-up delay-1" role="listitem">
+                  <span class="tip-num" aria-hidden="true">04</span>
+                  <h3>Check Heatmap</h3>
+                  <p>
+                    See your daily progress and avoid gaps in your practice.
+                  </p>
+                </article>
+
+                <article class="tip-card fade-up delay-2" role="listitem">
+                  <span class="tip-num" aria-hidden="true">05</span>
+                  <h3>Create a Ritual</h3>
+                  <p>
+                    Take three deep breaths before opening the radha naam jap
+                    counter.
+                  </p>
+                </article>
+
+                <article class="tip-card fade-up delay-3" role="listitem">
+                  <span class="tip-num" aria-hidden="true">06</span>
+                  <h3>Track Streak</h3>
+                  <p>
+                    A 30-day streak in your naam jaap counter gives great
+                    motivation.
+                  </p>
+                </article>
+
+                <article class="tip-card fade-up" role="listitem">
+                  <span class="tip-num" aria-hidden="true">07</span>
+                  <h3>Feel the Vibration</h3>
+                  <p>
+                    Let each vibration of the jaap counter guide your focus.
+                  </p>
+                </article>
+
+                <article class="tip-card fade-up delay-1" role="listitem">
+                  <span class="tip-num" aria-hidden="true">08</span>
+                  <h3>Review Weekly</h3>
+                  <p>
+                    Check your japa counter report every weekend and plan ahead.
+                  </p>
+                </article>
+
+                <article class="tip-card fade-up delay-2" role="listitem">
+                  <span class="tip-num" aria-hidden="true">09</span>
+                  <h3>Add Personal Mantras</h3>
+                  <p>
+                    Use the mantra counter for any prayer you like, not just
+                    presets.
+                  </p>
+                </article>
+
+                <article class="tip-card fade-up delay-3" role="listitem">
+                  <span class="tip-num" aria-hidden="true">10</span>
+                  <h3>Chant Together</h3>
+                  <p>
+                    Share progress with friends and family for positive support.
+                  </p>
+                </article>
+              </div>
+
+              <figure
+                class="tips-image fade-up delay-2"
+                aria-label="Report and progress screen"
+              >
+                <img
+                  src="assets/image-4.jpg"
+                  alt="Report screen showing current streak, weekly progress dot tracker, lifetime japa, and hours"
+                  loading="lazy"
+                  width="230"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== PRIVACY ========== -->
+        <section
+          class="privacy-section"
+          id="privacy"
+          aria-labelledby="privacy-heading"
+        >
+          <div class="container privacy-layout">
+            <figure class="priv-image fade-up" aria-label="Reminders screen">
+              <img
+                src="assets/image-9.jpg"
+                alt="Reminders screen showing Ram Ram daily alert with toggle and time setting"
+                loading="lazy"
+                width="230"
+              />
+            </figure>
+            <div class="priv-content fade-up delay-1">
+              <span class="label-tag">100% Private</span>
+              <h2 id="privacy-heading">
+                Why Privacy Matters for
+                <span class="highlight">Spiritual Practice</span>
+              </h2>
+              <p>
+                Your spiritual journey is personal. Many naam jaap counter
+                online apps ask for login and store your data online. We believe
+                your radha naam jap is between you and God. Our digital japa
+                counter works fully on your phone.
+              </p>
+              <ul class="priv-list" role="list">
+                <li>
+                  <span class="priv-icon" aria-hidden="true">
+                    <svg
+                      width="14"
+                      height="14"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>No Login Needed</strong>
+                    <p>Open and start chanting. No accounts, no passwords.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="priv-icon" aria-hidden="true">
+                    <svg
+                      width="14"
+                      height="14"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <rect x="2" y="3" width="20" height="14" rx="2" />
+                      <path d="M8 21h8M12 17v4" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>No Cloud Storage</strong>
+                    <p>Your data is never uploaded to any server.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="priv-icon" aria-hidden="true">
+                    <svg
+                      width="14"
+                      height="14"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <rect x="5" y="11" width="14" height="10" rx="2" />
+                      <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Safe Local Data Storage</strong>
+                    <p>
+                      Everything stays on your device — fully in your control.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <p class="priv-footer">
+                When you use our radha naam counter, your sadhana stays private.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== COMPARISON TABLE ========== -->
+        <section
+          class="comparison"
+          id="comparison"
+          aria-labelledby="comparison-heading"
+        >
+          <div class="container">
+            <header class="section-header fade-up">
+              <span class="label-tag">Comparison</span>
+              <h2 id="comparison-heading">Beads vs. Mechanical vs. Digital</h2>
+              <p>
+                See how our Naam Japa Counter app compares to traditional
+                methods for modern devotees.
+              </p>
+            </header>
+            <div class="table-wrap fade-up">
+              <table
+                class="compare-table"
+                role="table"
+                aria-label="Comparison of japa counter methods"
+              >
+                <thead>
+                  <tr>
+                    <th scope="col">Feature</th>
+                    <th scope="col">Japa Mala (Beads)</th>
+                    <th scope="col">Mechanical Counter</th>
+                    <th scope="col">Naam Japa Counter App</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Feature">Portability</td>
+                    <td data-label="Japa Mala (Beads)">Difficult in office</td>
+                    <td data-label="Mechanical Counter">Small device</td>
+                    <td
+                      data-label="Naam Japa Counter App"
+                      class="highlight-col"
+                    >
+                      Always in phone
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Feature">Durability</td>
+                    <td data-label="Japa Mala (Beads)">Thread may break</td>
+                    <td data-label="Mechanical Counter">Can stop working</td>
+                    <td
+                      data-label="Naam Japa Counter App"
+                      class="highlight-col"
+                    >
+                      Works with phone
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Feature">History</td>
+                    <td data-label="Japa Mala (Beads)">No record</td>
+                    <td data-label="Mechanical Counter">Manual reset</td>
+                    <td
+                      data-label="Naam Japa Counter App"
+                      class="highlight-col"
+                    >
+                      Automatic record
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Feature">Sound</td>
+                    <td data-label="Japa Mala (Beads)">Silent</td>
+                    <td data-label="Mechanical Counter">Clicking sound</td>
+                    <td
+                      data-label="Naam Japa Counter App"
+                      class="highlight-col"
+                    >
+                      Silent vibration
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Feature">Goals</td>
+                    <td data-label="Japa Mala (Beads)">Fixed 108</td>
+                    <td data-label="Mechanical Counter">One goal</td>
+                    <td
+                      data-label="Naam Japa Counter App"
+                      class="highlight-col"
+                    >
+                      Custom goals
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="table-note fade-up">
+              While real beads have a special feeling, the Naam Japa Counter app
+              gives full support for today's busy life. It is a helpful mantra
+              jap counter for modern devotees.
+            </p>
+          </div>
+        </section>
+
+        <!-- ========== 6 FEATURES ========== -->
+        <section
+          class="features"
+          id="features"
+          aria-labelledby="features-heading"
+        >
+          <div class="container">
+            <header class="section-header fade-up">
+              <span class="label-tag">6 Main Features</span>
+              <h2 id="features-heading">
+                Designed for Today's Spiritual Seekers
+              </h2>
+              <p>
+                Our Japa counter is built with care, combining modern technology
+                with the needs of a sincere devotee.
+              </p>
+            </header>
+            <div class="features-grid" role="list">
+              <article
+                class="feat-card fade-up"
+                role="listitem"
+                id="feat-offline"
+              >
+                <figure class="feat-img-wrap" aria-label="App working offline">
+                  <img
+                    src="assets/image-7.jpg"
+                    alt="Settings screen showing offline status, dark mode and reminders options"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="feat-info">
+                  <span class="feat-num" aria-hidden="true">01</span>
+                  <h3>Fully Offline &amp; Private</h3>
+                  <p>
+                    Unlike many naam jaap counter online tools, this app works
+                    without internet. Your data stays on your phone.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="feat-card fade-up delay-1"
+                role="listitem"
+                id="feat-tracking"
+              >
+                <figure
+                  class="feat-img-wrap"
+                  aria-label="Home screen with japa and mala tracking"
+                >
+                  <img
+                    src="assets/image-1.jpg"
+                    alt="Naam Japa Counter home showing Japa 0, Mala 0, Time display"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="feat-info">
+                  <span class="feat-num" aria-hidden="true">02</span>
+                  <h3>Smart Mala &amp; Japa Tracking</h3>
+                  <p>
+                    The jaap counter tracks each chant, and the mala counter
+                    tracks every 108 chants. You get a full view of your
+                    progress.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="feat-card fade-up delay-2"
+                role="listitem"
+                id="feat-heatmap"
+              >
+                <figure
+                  class="feat-img-wrap"
+                  aria-label="Consistency heatmap screen"
+                >
+                  <img
+                    src="assets/image-3.jpg"
+                    alt="Consistency heatmap calendar showing 260 total japa this month"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="feat-info">
+                  <span class="feat-num" aria-hidden="true">03</span>
+                  <h3>Consistency Heatmap</h3>
+                  <p>
+                    See your daily chanting in a simple heatmap view. It helps
+                    you stay regular and build a strong habit.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="feat-card fade-up"
+                role="listitem"
+                id="feat-reminders"
+              >
+                <figure class="feat-img-wrap" aria-label="Reminders screen">
+                  <img
+                    src="assets/image-9.jpg"
+                    alt="Reminders screen showing Ram Ram daily alert with time 06:07 PM"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="feat-info">
+                  <span class="feat-num" aria-hidden="true">04</span>
+                  <h3>Custom Reminders</h3>
+                  <p>
+                    Set reminders for morning or evening chanting. Your radha
+                    naam counter will gently remind you daily.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="feat-card fade-up delay-1"
+                role="listitem"
+                id="feat-language"
+              >
+                <figure
+                  class="feat-img-wrap"
+                  aria-label="Stories in Hindi and other languages"
+                >
+                  <img
+                    src="assets/image-6.jpg"
+                    alt="Hindu Stories screen with Hindi language stories listed"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="feat-info">
+                  <span class="feat-num" aria-hidden="true">05</span>
+                  <h3>Multi-Language Support</h3>
+                  <p>
+                    Our japa counter supports English, Hindi (हिन्दी), Gujarati
+                    (ગુજરાતી), and Marathi (मराठी), so everyone feels
+                    comfortable.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="feat-card fade-up delay-2"
+                role="listitem"
+                id="feat-focus"
+              >
+                <figure
+                  class="feat-img-wrap"
+                  aria-label="Focus mode app screen"
+                >
+                  <img
+                    src="assets/image-8.jpg"
+                    alt="Focus mode screen with large tap to chant button and mala ring"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="feat-info">
+                  <span class="feat-num" aria-hidden="true">06</span>
+                  <h3>Focus Mode with Vibration</h3>
+                  <p>
+                    Focus Mode removes distractions. With soft vibration
+                    feedback, your radha naam jap feels peaceful and natural.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== WHY DIGITAL ========== -->
+        <section
+          class="why-digital"
+          id="why-digital"
+          aria-labelledby="why-heading"
+        >
+          <div class="container why-layout">
+            <div class="why-phones fade-up">
+              <figure
+                class="wd-phone wd-back"
+                aria-label="Insights chart screen"
+              >
+                <img
+                  src="assets/image-2.jpg"
+                  alt="Weekly insights bar chart showing japa count per day"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="wd-phone wd-front" aria-label="Report screen">
+                <img
+                  src="assets/image-4.jpg"
+                  alt="Report screen with streak, weekly progress, and lifetime counter"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+
+            <div class="why-content fade-up delay-1">
+              <span class="label-tag">Why Digital?</span>
+              <h2 id="why-heading">
+                Why a Digital Japa Counter is
+                <span class="highlight">Helpful Today</span>
+              </h2>
+              <p>
+                A digital japa counter fits the modern lifestyle without
+                compromising your spiritual depth.
+              </p>
+              <ul class="why-list" role="list">
+                <li>
+                  <span class="why-icon" aria-hidden="true">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                      <line x1="12" y1="18" x2="12.01" y2="18" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Easy to Carry</strong>
+                    <p>
+                      Your naam jaap counter is always with your phone — no
+                      extra item to carry.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="why-icon" aria-hidden="true">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M18 20V10M12 20V4M6 20v-6" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Accurate Record</strong>
+                    <p>
+                      Check your complete japa history anytime, with time and
+                      date stamps.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="why-icon" aria-hidden="true">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Motivation</strong>
+                    <p>
+                      Heatmap and streak features keep you inspired and
+                      consistent every day.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="why-icon" aria-hidden="true">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M11 5L6 9H2v6h4l5 4V5zM22 9l-6 6M16 9l6 6" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Silent Use</strong>
+                    <p>
+                      No sound, only gentle vibration — perfect for chanting
+                      anywhere.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== DOWNLOAD CTA ========== -->
+        <section
+          class="cta-section"
+          id="download"
+          aria-labelledby="cta-heading"
+        >
+          <div class="container">
+            <div class="cta-card fade-up">
+              <div class="cta-text">
+                <h2 id="cta-heading">Begin Your Journey Today</h2>
+                <p>
+                  The path of radha naam jap is full of love and dedication. By
+                  mixing ancient mantra practice with a digital japa counter, we
+                  help you stay peaceful and focused daily. Whether you chant
+                  one mala or many, we are happy to support your journey.
+                </p>
+                <p>
+                  Download the Naam Japa Counter app today and turn your phone
+                  into a sacred companion.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary btn-large"
+                  id="cta-download-btn"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.42.07 2.4.77 3.22.83.98-.18 1.92-.91 3.21-.98 1.56-.1 2.96.65 3.85 1.8-3.4 2.04-2.83 6.6.85 7.85-.62 1.56-1.44 3.1-3.13 4.38zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
+                    />
+                  </svg>
+                  Get Started for Free
+                </a>
+              </div>
+              <figure class="cta-phones" aria-label="App preview">
+                <img
+                  src="assets/image-4.jpg"
+                  alt="Report screen"
+                  class="cta-phone cta-back"
+                  loading="lazy"
+                />
+                <img
+                  src="assets/image-1.jpg"
+                  alt="Counter screen"
+                  class="cta-phone cta-front"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== FAQ ========== -->
+        <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+          <div class="container faq-container">
+            <header class="section-header fade-up">
+              <span class="label-tag">FAQ</span>
+              <h2 id="faq-heading">Frequently Asked Questions</h2>
+              <p>
+                Everything you need to know about our naam japa counter app.
+              </p>
+            </header>
+
+            <div class="faq-grid" role="list">
+              <article class="faq-card fade-up" role="listitem">
+                <h3>
+                  What is the difference between a Jaap counter and a Mala
+                  counter?
+                </h3>
+                <p>
+                  A jaap counter counts each chant. A mala counter counts every
+                  108 chants as one round. In our app, both work together
+                  automatically — so you never lose track.
+                </p>
+              </article>
+
+              <article class="faq-card fade-up delay-1" role="listitem">
+                <h3>Can I use this as a Radha Naam Jap counter?</h3>
+                <p>
+                  Yes. You can set radha naam jap as your mantra and track it
+                  separately every day. You can also add any mantra of your
+                  choice.
+                </p>
+              </article>
+
+              <article class="faq-card fade-up delay-2" role="listitem">
+                <h3>Is my data safe in this digital japa counter?</h3>
+                <p>
+                  Yes. Unlike most naam jaap counter online apps, we do not
+                  store your data online. Everything stays securely on your
+                  phone with no login required.
+                </p>
+              </article>
+
+              <article class="faq-card fade-up" role="listitem">
+                <h3>Can I add my own mantra?</h3>
+                <p>
+                  Yes. You can add any mantra in the mantra jap counter and
+                  track it separately from other mantras in your daily sadhana.
+                </p>
+              </article>
+
+              <article class="faq-card fade-up delay-1" role="listitem">
+                <h3>Does the app work without internet?</h3>
+                <p>
+                  Yes. The naam jaap counter works 100% offline. No internet
+                  connection is required at any time — your sadhana is never
+                  interrupted.
+                </p>
+              </article>
+
+              <article class="faq-card fade-up delay-2" role="listitem">
+                <h3>How can I set reminders for Radha Naam Jap?</h3>
+                <p>
+                  Go to settings and open the reminders section. Set the time,
+                  and your radha naam counter will remind you gently every day
+                  at your chosen time.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <a
+            href="index.html"
+            class="nav-logo"
+            aria-label="Naam Japa Counter Home"
+          >
+            <span class="logo-om" aria-hidden="true">ॐ</span>
+            <span>Naam Japa Counter</span>
+          </a>
+          <p>
+            Your simple digital japa &amp; mala counter for daily sadhana. Made
+            with devotion for seekers worldwide.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="/">Home</a>
+          <a href="/about-us.html">About</a>
+          <a href="/privacy-policy.html">Privacy & Policy</a>
+        </nav>
+        <div class="footer-social" aria-label="Social media">
+          <a href="#" aria-label="Twitter / X">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <p>
-          Your simple digital japa &amp; mala counter for daily sadhana. Made
-          with devotion for seekers worldwide.
+          © 2025 dipuguide — Naam Japa Counter. Made with devotion in India.
         </p>
       </div>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="/">Home</a>
-        <a href="/about-us.html">About</a>
-        <a href="/privacy-policy.html">Privacy & Policy</a>
-      </nav>
-      <div class="footer-social" aria-label="Social media">
-        <a href="#" aria-label="Twitter / X">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-          </svg>
-        </a>
-        <a href="#" aria-label="Instagram">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <rect x="2" y="2" width="20" height="20" rx="5" />
-            <circle cx="12" cy="12" r="4" />
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>
-        © 2025 dipuguide — Naam Japa Counter. Made with devotion in India.
-      </p>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js" defer></script>
-</body>
-
+    <script src="script.js" defer></script>
+  </body>
 </html>
